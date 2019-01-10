@@ -1,8 +1,11 @@
 # LaTeX for scientists
 
 Instructor: Julien Riou (julien.riou@ispm.unibe.ch) 
+
 Date: 13.02.2019
+
 Time: 10.00 – 12.00
+
 Venue: Room 220, Mittelstrasse 43, 3012 Bern
 
 ## Description
