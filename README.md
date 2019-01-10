@@ -1,4 +1,4 @@
-# LaTeX for scientists
+# LaTeX for scientists (ISPM-CTU-BIHAM internal course)
 
 Instructor: Julien Riou (julien.riou@ispm.unibe.ch) 
 
