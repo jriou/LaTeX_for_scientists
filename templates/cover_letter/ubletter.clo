@@ -1,0 +1,71 @@
+% File: ubletter.clo, Package: ubletter
+% Version 1.2 2016-06-24
+
+%%% REMOVE THE FOLLOWING LINE AFTER CUSTOMIZIG
+\PackageError{ubletter}{You have not customized ubletter.clo}{Edit ubletter.clo to your taste and then remove this error message.}
+%%%
+
+% Personal settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\person{Mein Name}
+
+\newcommand{\letterPersonal}{
+  \def\mystreet{Strasse}
+  \def\telnum{+41 31 NNN NN NN}
+  \def\mobilenum{+41 79 NNN NN NN}
+  \def\email{mail@mail.unibe.ch}
+  \def\web{www.server.unibe.ch/person}
+  \def\plz{3012}
+}
+
+% Lab settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\letterInstitute}{
+  \def\mystreet{Strasse}
+  \def\telnum{+41 31 NNN NN NN}
+  \def\email{institut@server.unibe.ch}
+  \def\web{www.server.unibe.ch}
+  \def\plz{3012}
+}
+
+% Language sensitive settings %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\letterGerman}{
+   \def\faculty{Meine Fakultät}
+   \def\dept{Mein Departement}
+   \def\institute{Mein Institut}
+   \def\location{Bern}
+   \def\addressline{\dept, \institute, \mystreet, \plz \ \location}
+   \def\job{Meine Funktion}
+   \def\sign{Meine Unterschrift}
+}
+
+\newcommand{\letterEnglish}{
+    \def\faculty{My Faculty}
+    \def\dept{My Department}
+    \def\institute{My Lab}
+    \def\location{Bern}
+    \def\addressline{\dept, \institute, \mystreet, \plz \ \location}
+    \def\job{My Job}
+    \def\sign{My Signature}
+}
+
+\newcommand{\letterFrench}{
+    \def\faculty{Ma Faculté}
+    \def\dept{Mon Departement}
+    \def\institute{Ma Laboratoire}
+    \def\location{Bern}
+    \def\addressline{\dept, \institute, \mystreet, \plz \ \location}
+    \def\job{Ma Fonction}
+    \def\sign{Ma Signature}
+}
+
+\newcommand{\letterItalian}{
+    \def\faculty{Mia Facoltà}
+    \def\dept{Mio Diparimento}
+    \def\institute{Mio Instituto}
+    \def\location{Berna}
+    \def\addressline{\dept, \institute, \mystreet, \plz \ \location}
+    \def\job{La mia Funzione}
+    \def\sign{La mia Firma}
+}

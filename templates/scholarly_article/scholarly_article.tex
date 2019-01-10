@@ -1,0 +1,117 @@
+\documentclass{article}
+
+% main packages for general use
+\usepackage[utf8]{inputenc} % use utf8 encoding for some special characters (especially when writing in german or french)
+\usepackage{graphicx} % enhanced support for graphics
+\usepackage{amsmath} % enhanced support for equations
+\usepackage{float} % use 'H' placement for figures and tables
+\usepackage{authblk} % for affiliations in the title
+\usepackage[margin=4cm]{geometry} % changing margins
+
+% todonotes package for writing comments in margins
+\usepackage{todonotes}
+% create a new command for each contributor
+\newcommand\CD[1]{\todo[color=orange!40]{CD: #1}} % here is created the command \CD{} that can be used by Charles Darwin to make comments in orange
+
+\begin{document}
+	
+	% title
+	\title{Unnecessary Complicated Research Title}
+	
+	% authors with letters corresponding to affiliations
+	\author[a,*]{Charles Darwin} 
+	\author[a,b]{Alexander von Humboldt} 
+
+	% affiliations
+	\affil[a]{Geological Society of London, United Kingdom}
+	\affil[b]{University of Berlin, Germany}
+	\affil[*]{Corresponding author: charles.darwin@geosoc.uk}
+	
+	% date (can be left empty)
+	\date{}
+	
+	% command to create the title box
+	\maketitle
+	
+	% table of content with all sections and subsections
+	\tableofcontents
+	
+	% abstract 
+	\begin{abstract}
+		
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		
+	\end{abstract}
+	
+	% sectioning
+	\section{Introduction}
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	
+	\section{Useful commands}
+	
+	\subsection{Lists}
+	
+	In this paper we show:
+	\begin{itemize}
+		\item argument 1
+		\item argument 2
+	\end{itemize}
+	
+	\subsection{Figures}
+	
+	My cat is very cute (see Fig. \ref{refcat}).
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=5cm]{cat.jpg}
+		\caption{This is my cat.}
+		\label{refcat}
+	\end{figure}
+		
+	\subsection{Tables}
+	
+	An example of a table is given in Table \ref{reftable}.
+	
+	\begin{table}[h]
+		\label{reftable}
+		\centering
+		\caption{Example of a table.}
+		\begin{tabular}{r|c|c} 
+			Trial & n & t \\ \hline
+			1 & 23 & 2 \\ \hline
+			2 & 15 & 10 \\ \hline
+			3 & 100 & 20 \\ 
+		\end{tabular}
+	\end{table}
+	
+		
+	\subsection{Equations}
+	
+	We use logistic regression:
+	\begin{equation}
+		 \text{logit} \ \text{E}(Y) = \alpha+\beta x
+	\end{equation}
+	where $\alpha$ is the intercept and $\beta$ the coefficient.
+	
+	\subsection{Comments}
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	% this sentence is very stupid
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \textcolor{red}{SAD!}
+	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \marginpar{you are fired}
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\CD{go home now}
+	
+	
+	
+	\subsection{Citations}
+	
+	My cat is the product of evolution \cite{darwin1859origin}.
+	
+	% choose bibliography style
+	\bibliographystyle{plain}
+	% declare the .bib file
+	\bibliography{scholarly_article}
+	
+	
+\end{document}
