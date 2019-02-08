@@ -5,6 +5,7 @@
 
 % packages
 \usepackage{hyperref} % allows clickable urls
+\usepackage{dsfont} % allow ds font
 
 % define title page
 \title{\LaTeX \ for scientists }
@@ -88,7 +89,7 @@
 	
 	\textit{In practice}, it is easier to use an integrated development environment:
 		\begin{itemize}
-			\item installed on your computer: \alert{\TeX Studio} (\underline{\url{www.texstudio.org}}) 
+			\item installed on your computer: \alert{\TeX Studio} (\url{www.texstudio.org}) 
 				\begin{itemize}
 					\item[-] but you still need to install a compiler!
 				\end{itemize}		
@@ -104,7 +105,7 @@
 		\begin{itemize}
 			\item Are stated once and take effect until further notice
 		\end{itemize}
-		e.g. \texttt{\textbackslash centering},  \texttt{\textbackslash textit\{\}}
+		e.g. \texttt{\textbackslash documentclass}, \texttt{\textbackslash centering},  \texttt{\textbackslash textit\{\}}
 	\end{block}
 	\begin{block}{Environments}
 		\begin{itemize}
@@ -146,7 +147,7 @@
 		\item Write your content within a \texttt{document} environment \vspace{1em} \pause
 		
 		\hspace{1em}\texttt{\textbackslash documentclass\{\}} \\
-		\hspace{1em}\texttt{\textbackslash usepackage\{\}} \\
+		\hspace{1em}\texttt{\%\textbackslash usepackage\{\}} \\
 		\hspace{1em}\texttt{\textbackslash begin\{document\}} \\
 		\hspace{2em}\ldots\\
 		\hspace{1em}\texttt{\textbackslash end\{document\}}
@@ -192,7 +193,7 @@
 		\begin{block}{Solution}
 			\vspace{.3em}
 			\hspace{5em}\texttt{\textbackslash documentclass\{letter\}} \\
-			\hspace{5em}\%\texttt{\textbackslash usepackage\{\}} \\
+			\hspace{5em}\texttt{\%\textbackslash usepackage\{\}} \\
 			\hspace{5em}\texttt{\textbackslash begin\{document\}} \\
 			\hspace{8em}Hello, world! \\
 			\hspace{5em}\texttt{\textbackslash end\{document\}}
@@ -415,7 +416,7 @@ Note: Lists can be nested within other lists.
 		
 		Numbered equations: 		\texttt{\small \textbackslash begin\{equation\}\ldots\textbackslash end\{equation\}}
 		\begin{equation}
-			 \text{logit} \ \text{E}(Y) = \alpha+\beta x
+			 \text{logit} \ \mathds{E}(Y) = \alpha+\beta x
 		\end{equation}
 	\end{block}
 }
